@@ -1,0 +1,35 @@
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+local uis = game:GetService("UserInputService")
+local camera = workspace.Camera
+
+uis.InputBegan:Connect(function(input,gameProccesedEvent)
+    if input.KeyCode == Enum.KeyCode.U then
+        
+        char.HumanoidRootPart.CFrame = CFrame.new(-94.3375473, 482.374207, -913.108765, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.3)
+camera.CFrame = CFrame.new(-94.0030975, 487.135742, -901.535034, 0.99998039, -0.00211338303, 0.00589783257, 0, 0.941386759, 0.337329149, -0.00626504747, -0.337322533, 0.941368282)
+game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.E, false, nil)
+wait(5)
+game:GetService("VirtualInputManager"):SendKeyEvent(false, Enum.KeyCode.E, false, nil)
+wait()
+while true do
+char.HumanoidRootPart.CFrame = CFrame.new(-113.148605, 479.862427, -937.853821, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+camera.CFrame = CFrame.new(-112.026131, 486.291779, -948.984924, -0.999809563, 0.00708500016, -0.0181836504, 0, 0.931769431, 0.36305064, 0.0195151847, 0.362981498, -0.931591928)
+wait()
+game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.E, false, nil)
+wait(5)
+game:GetService("VirtualInputManager"):SendKeyEvent(false, Enum.KeyCode.E, false, nil)
+wait(5)
+char.HumanoidRootPart.CFrame = CFrame.new(741.177429, 481.457031, -1013.93665, 0.984812498, 0, 0.173621148, 0, 1, 0, -0.173621148, 0, 0.984812498)
+camera.CFrame = CFrame.new(723.180176, 487.784149, -1013.80463, 0.00908367615, 0.30781883, -0.951401651, -2.32830671e-10, 0.95144099, 0.307831496, 0.999958813, -0.00279624132, 0.00864258036)
+wait()
+game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.E, false, nil)
+wait(5)
+game:GetService("VirtualInputManager"):SendKeyEvent(false, Enum.KeyCode.E, false, nil)
+wait()
+print("+150$")
+end
+end
+end)
+    
